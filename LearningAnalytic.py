@@ -37,6 +37,8 @@ data_sample.sampleProgressionPlot(title="progression of the class")
 data_sample_name = Sample()
 #fill the object with only the data of the student's name
 data_sample_name = data_sample.sampleGetName(0)
+#create and save a plot of the time spend on each exercise by the student 0
+data_sample_name.sampleTimePlot(plotname='timePlot.png',title="Time spend on each exercise by the student 0")
 #create a new text file and write a sample in
 data_sample_name.sampleWrite("SampleName.txt")
 #create a new csv file and write a sample in
@@ -44,9 +46,6 @@ data_sample_name.sampleCsvWrite("SampleName.csv")
 #it works the same way for all the other function of this type
 #sampleGetType
 #sampleGetTopic
-
-#create and save a plot of the time spend on each exercise by the student 0
-data_sample_name.sampleTimePlot(plotname='timePlot.png',title="Time spend on each exercise by the student 0")
 
 #rename one student name in the sample
 data_sample.sampleRename(0,"Ramses")
